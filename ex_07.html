@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 7</title>
+</head>
+
+<body>
+    <button id="base" onclick="ex_07()">Clicar!</button>
+
+    <script>
+        var c = 0;
+        //a logica é que vai mostrar o elemento quantas vezes o usuario clicar
+        function ex_07() {
+            var elemento_pai = document.body;
+            var elemento = document.createElement("h1");
+            //cria um elemento e acrescenta u texto
+            var texto = document.createTextNode("Um texto qualquer...");
+            elemento.appendChild(texto);
+            if (c <= 5) {
+                //insert before o text vai aparecer antes do botao
+                elemento_pai.insertBefore(elemento, document.getElementById("base"));
+                c++;
+            }
+
+
+        }
+    </script>
+
+</body>
+
+</html>

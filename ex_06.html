@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 6</title>
+</head>
+<body>
+    <button onclick="ex_06()">Clicar!</button>
+    
+    <script>
+        //a logica é que vai mostrar o elemento quantas vezes o usuario clicar
+        function ex_06(){
+            var elemento_pai = document.body;
+            var elemento = document.createElement("h1");
+            //cria um elemento e acrescenta u texto
+            var texto = document.createTextNode("Um texto qualquer...");
+            elemento.appendChild(texto);
+            //appendChild o que o Filho recebe no caso um texto
+            elemento_pai.appendChild(elemento);
+
+        }
+    </script>
+
+</body>
+</html>
